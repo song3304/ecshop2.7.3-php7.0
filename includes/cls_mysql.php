@@ -207,7 +207,7 @@ class cls_mysql
     function fetch_array($query, $result_type = MYSQLI_ASSOC)
     {
         $row = $query->fetch_array($result_type);
-        $query->free();
+        //$query->free();
         return $row;
     }
 
